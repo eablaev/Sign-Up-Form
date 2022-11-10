@@ -1,0 +1,246 @@
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(./Norse-Bold.otf);
+}
+
+@font-face {
+    font-family: "Rubik-Maze";
+    src: url(./RubikMaze-Regular.ttf);
+}
+
+
+html{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+
+.container{
+    display: flex;
+    border: 3px solid black;
+
+}
+
+
+.left{
+    width: 300px;
+    height:600px;
+    background-image: url(./pics/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size:cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 500px;
+    height:600px;
+    background-color: aliceblue;
+
+}
+
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 10px 120px 40px 0px;
+   
+    gap: 10px;
+   
+
+   
+
+ 
+}
+
+li{
+    
+    display:flex;
+    flex-direction: column;
+
+
+
+
+}
+
+
+fieldset{
+    border: none;
+    box-shadow: 0px 4px 4px rgb(145, 145, 145);
+
+    background-color: rgb(255, 255, 255);
+
+    padding-left: 2em;
+    
+
+    
+}
+
+legend{
+  position: absolute;
+font-weight: 700;
+
+}
+
+label{
+    
+}
+
+.form_info,.subTitle{
+    margin:2em;
+}
+
+
+
+.img_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  position: relative;
+  isolation: isolate;
+
+
+  padding: 10px;
+
+  bottom: 80px
+  
+
+}
+
+img {
+    
+    max-width:20%;
+
+    
+  
+ 
+ 
+}
+
+.img_container::after {
+
+
+
+
+    
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: rgb(36, 34, 34);
+    opacity: 0.6
+
+    
+}
+
+button{
+    
+    background-color: rgb(55, 87, 55);
+    box-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 8px 30px;
+    width: auto;
+    color: aliceblue;
+    margin: 2em 2em;
+
+    font-size: 0.7em;
+
+ 
+}
+
+
+.left h1{
+    color: white;
+    font-size: 4em;
+    font-family: "Norse-Bold";
+    margin: 0;
+
+}
+
+
+
+input{
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 3px;
+    outline: none;
+    height: 1.8em;
+    font-size: 0.75em; 
+    padding: 0.3em
+  
+}
+
+input:focus{
+    box-shadow: 0.1em 0.1em 0.1em 0.1em rgb(230, 230, 235);
+    border: 2px solid rgb(139, 145, 236);
+  
+}
+
+label{
+    font-size: 0.5em;
+    color:rgb(45, 45, 45);
+    font-weight: bold;
+}
+
+
+h3{
+    margin: 2em;
+    font-size: 0.75em;
+    color:rgb(45, 45, 45) ;
+font-weight:normal;
+}
+
+a{
+    text-decoration: none;
+  color: rgb(55, 87, 55);
+  font-weight: bold;
+}
+
+.form_info, .subTitle{
+    color: rgb(45, 45, 45);
+    font-weight: 600;
+}
+
+span{
+    font-style: italic;
+}
+
+
+#error_message{
+    
+    color: red;
+    font-size: 0.4em;
+}
+
+
